@@ -1,28 +1,21 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
-
 .calculator {
-    width: 25%;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    background-color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    background-color: black;
 }
 .display {
-    width: 95%;
-    height: 60px;
+    width: 100%;
     padding: 10px;
-    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 24px;
     text-align: right;
@@ -31,24 +24,21 @@ body {
     box-sizing: border-box;
 }
 .buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 }
 .buttons button {
-    width: 80px;
-    height: 80px;
     padding: 20px;
-    font-size: 18px;
-    font-size: 130%;
+    height: 75px;
+    color: white;
+    font-size: 20px;
     border: none;
     border-radius: 50%;
-    background-color: rgb(54, 53, 53);
+    background-color: #e0e0e0;
     cursor: pointer;
-    color: white;
+    background-color: rgb(92, 89, 89);
 }
-
-.buttons button:hover {
-    background-color: rgb(94, 93, 93);
+.buttons button:active {
+    background-color: #ccc;
 }
