@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="display" id="display" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="clearLastInput()">C</button>
+            <button class="symbols">%</button>
+            <button class="symbols">/</button>
+            <button class="numbers">7</button>
+            <button class="numbers">8</button>
+            <button class="numbers">9</button>
+            <button class="symbols">+</button>
+            <button class="numbers">4</button>
+            <button class="numbers">5</button>
+            <button class="numbers">6</button>
+            <button class="symbols">-</button>
+            <button class="numbers">1</button>
+            <button class="numbers">2</button>
+            <button class="numbers">3</button>
+            <button class="symbols">*</button>
+            <button class="numbers">00</button>
+            <button class="numbers">0</button>
+            <button class="numbers">.</button>
+            <button onclick="calculateResult()" style="background-color: orangered;">=</button>
+               
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
